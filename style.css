@@ -68,6 +68,7 @@ ul{
     height: 30px;
     justify-content: space-between;
     margin-right: 20px;
+    outline: 1px solid #666;
 } 
 
 .search-container input[type=search] {
@@ -95,6 +96,7 @@ ul{
     height: calc(100vh - 88px);
     background-size: cover;
     width: 100%;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -140,7 +142,7 @@ ul{
 
 #main .container {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .tour-info {
@@ -149,6 +151,7 @@ ul{
     /* outline: 1px solid red; */
     font-size: 16px;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .tour-info img {
@@ -156,11 +159,44 @@ ul{
     height: 250px;
 }
 
-.menu-group p{
+
+.tour-info .menu-group{
+    /* outline: 1px solid red; */
+    width: 290px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 85px;
+}
+
+
+.tour-info .menu-group p {
     text-align: center;
     align-items: center;
     margin-top: 70px;
+    margin: 0 auto;
+    color: #00087A;
+    font-weight: 500;
 }
+
+.tour-info .menu-group strong{
+    text-align: center;
+    align-items: center;
+    margin-top: 70px;
+    margin: 0 auto;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.tour-info .menu-group >.tag{
+    color: #707070;
+    font-size: 12px;
+}
+
+
+
+
 
 /* sub-info */
 
@@ -182,14 +218,15 @@ ul{
 }
 
 
-
-#sub-info .menu-group p strong{
+#sub-info .sub-group p strong{
     color: #304634;
+    text-align: left;
 }
 
 
-#sub-info img .menu-group {
+#sub-info img .sub-group {
     width: 50%;
+    text-align: left;
 }
 
 
@@ -201,14 +238,14 @@ ul{
     
 }
 
-#sub-info .menu-group p{
+#sub-info .sub-group p{
     width: 50%;
     margin-top: 100px;
     margin-left: 200px;
-    text-align: center;
+    text-align: left;
 }
 
-.menu-group .btn{
+.sub-group .btn{
     margin-top: 40px;
     margin-left: 200px;
     color: #00087A;
